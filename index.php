@@ -30,8 +30,7 @@ if (isset($_POST['valider'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,11 +41,13 @@ if (isset($_POST['valider'])) {
             </h1>
         </div>
     <div class="flex justify-center items-center mt-8 flex-wrap flex-row max-w-2xl mx-auto px-4 py-20 lg:max-w7xl">
-        <form action="" method="post" class="bg-gray-50/50 shadow-lg backdrop-blur-md flex flex-col px-6 py-10 text-center w-full">
+        <form action="" method="post" class="bg-gray-50/50 shadow-lg backdrop-blur-md flex flex-col px-10 py-10 text-center w-3/4">
+            <h2 class="uppercase font-bold text-5xl mb-5">Se connecter</h2>
             <label class="m-2 text-transform: uppercase" for="login">Login :</label>
             <input class="py-2 px-4 outline-none text-center" type="text" id="login" name="login" autocomplete="off">
             <label class="m-2 text-transform: uppercase" for="mdp">Password :</label>
             <input class="py-2 px-2 outline-none text-center" type="password" id="mdp" name="mdp" autocomplete="off">
+            <a href="./inscription.php" class="mt-10">Créer un compte</a>
             <input type="submit" name="valider" class="bg-blue-400 rounded-sm mt-20 py-3 text-transform: uppercase" value="Valider">
         </form>
     </div>

@@ -32,8 +32,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=agence_voyage', 'root','root');
                 <li>Tarif : <?= $circuit['prix_inscription'];?>€</li>
                 <li>Nombre d'étapes : <?= $circuit['nb_etape'];?></li>
             </ul>
+            <a href="./affiche-etape.php?=id_circuit=<? $circuit['id_circuit']; ?>">Voir les étpaes</a>
         </div>
-
     <?php
     }
     ?>

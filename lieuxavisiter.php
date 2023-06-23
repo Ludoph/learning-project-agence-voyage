@@ -14,5 +14,4 @@ class Circuit{
         $this->description = $description;
         $this->prixVisite = $prixVisite;
     }
-
 };
