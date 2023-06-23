@@ -25,4 +25,5 @@ class Circuit{
         $this->nbEtape = $nbEtape;
     }
 
+    
 };
